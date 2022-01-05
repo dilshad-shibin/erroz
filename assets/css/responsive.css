@@ -9,7 +9,7 @@
 :: 1.0 COMMON CSS
 ****************************** */
 @media(min-width:1440px){
-    .container{
+    .container-banner{
         max-width: 1400px;
     }
 }

@@ -673,3 +673,41 @@ a,
 .tabcontent{
     display: none;
 }
+
+.service-thumb{
+    background-color: #014553;
+    padding: 100px 30px;
+}
+
+.service-thumb li{
+    border-bottom: 1px solid #ffc2677a;
+    padding-bottom: 15px;
+    margin-bottom: 20px
+}
+
+.service-thumb li:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.service-thumb li a{
+    color: #ffc267;
+    font-size: 22px;
+}
+
+.product-view{
+    background-color: #fff;
+    padding: 50px;
+}
+
+.tabcontent .inner-pro{
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    min-height: 220px;
+}
+
+.p-10{
+    padding: 0 5px !important;
+}
