@@ -12,6 +12,9 @@
     .container-banner{
         max-width: 1400px;
     }
+    .container-collection{
+        max-width: 1200px;
+    }
 }
 /* ******************************
 :: 2.0 HEADER AREA CSS
@@ -281,7 +284,7 @@
 
 @media (max-width: 575px) {
     .welcome-intro {
-        margin-top: 0;
+        margin-top: -50px;
     }
 
     .welcome-intro > h3 {
@@ -339,6 +342,16 @@
     .welcome-intro{
         text-align: center;
     }
+    .service-thumb,
+    .address-sec{
+        margin-bottom: 50px;
+    }
+    .navbar-dark.navbar-sticky-on .navbar-nav .nav-link{
+        color: #014553;
+    }
+    .navbar-dark.navbar-sticky-on .navbar-nav .nav-link:focus{
+        color: #d3983f;
+    }
 }
 
 @media(max-width: 767px){
@@ -365,5 +378,38 @@
     }
     .welcome-intro h1{
         font-size: 35px;
+    }
+    .head-section h1{
+        font-size: 40px;
+    }
+    .collection-area{
+        padding: 110px 0 75px;
+    }
+    .service-thumb {
+        padding: 60px 35px;
+    }
+    .product-head .nav-tabs .nav-link{
+        font-size: 16px;
+        padding: 12px 40px;
+    }
+    .about-content h1{
+        font-size: 40px;
+    }
+    .about-content img{
+        margin-bottom: 36px;
+    }
+    .contact-box .form-control{
+        height: 60px;
+        margin-bottom: 18px;
+    }
+    .contact-box input[type="submit"]{
+        padding: 20px 65px;
+    }
+    .footer-inner .menu-lists li a{
+        font-size: 14px;
+        padding: 0.75rem;
+    }
+    .footer-inner .social-icons li a svg{
+        margin-right: 20px;
     }
 }

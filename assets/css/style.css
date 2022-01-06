@@ -8,6 +8,9 @@
 :: 7.0 HEADER AREA CSS
 :: 8.0 WELCOME AREA CSS
 :: 9.0 Collection Area CSS
+:: 10.0 About Area CSS
+:: 11.0 Contact Area CSS
+:: 12.0 Footer Area CSS
 ****************************** */
 
 /* ******************************
@@ -478,8 +481,9 @@ a,
     bottom: 3%;
     height: 40px;
     width: 40px;
+    line-height: 40px;
     border-radius: 3px;
-    background-color: #041c23;
+    background-color: #014553;
     text-align: center;
     cursor: pointer;
     z-index: 500;
@@ -491,6 +495,11 @@ a,
     line-height: 38px;
     display: block;
     color: #fff;
+}
+
+#scrollUp > svg{
+    color: #fff;
+    font-size: 18px;
 }
 
 #scrollUp:hover {
@@ -656,7 +665,7 @@ a,
 ****************************** */
 .collection-area{
     background-color: #f9f6f1;
-    padding: 60px 0 120px;
+    padding: 95px 0 120px;
 }
 
 .head-section{
@@ -676,7 +685,7 @@ a,
 
 .service-thumb{
     background-color: #014553;
-    padding: 100px 30px;
+    padding: 162px 35px;
 }
 
 .service-thumb li{
@@ -693,11 +702,13 @@ a,
 .service-thumb li a{
     color: #ffc267;
     font-size: 22px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .product-view{
-    background-color: #fff;
-    padding: 50px;
+    /* background-color: #fff;
+    padding: 50px; */
 }
 
 .tabcontent .inner-pro{
@@ -710,4 +721,231 @@ a,
 
 .p-10{
     padding: 0 5px !important;
+}
+
+.product-head .nav-tabs .nav-link{
+    color: #4e4e4e;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 15px 70px;
+    background-color: #fff;
+    transition: all .3s ease;
+    border: 1px solid #fff;
+}
+
+.product-head .nav-tabs .nav-link:hover{
+    color: #d3983f;
+    border: 1px solid #d3983f;
+}
+
+.product-head .nav-tabs .nav-link.active{
+    background-color: #d3983f;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.tab-content{
+    background: #fff;
+    padding: 50px 50px 10px;
+}
+
+.product-head .nav-tabs{
+    border-bottom: none;
+}
+
+.tablinks .icon i,
+.tablinks .icon svg{
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+
+.tablinks:hover .icon i,
+.tablinks:hover .icon svg{
+    opacity: 1;
+}
+
+
+/* ******************************
+:: 10.0 About Area CSS
+****************************** */
+.about-area{
+    background-image: url(../img/bg/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+.about-content{
+    max-width: 650px;
+}
+
+.about-content h4{
+    color: #d3983f;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.about-content h1{
+    color: #d3983f;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.about-content img{
+    margin-bottom: 20px;
+}
+
+.about-content .text p{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.about-content .text p:last-child{
+    margin-bottom: 0;
+}
+
+/* ******************************
+:: 11.0 CONTACT ALL CSS
+****************************** */
+.address-sec{
+    background: #014553;
+    padding: 100px 42px;
+}
+
+.address-sec h2{
+    color: #d3983f;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.address-sec p{
+    color: #fffc;
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 268px;
+    line-height: 28px;
+}
+
+.address-sec .contact-sec{
+    padding-top: 30px;
+    border-top: 1px solid #d3983f;
+}
+
+.contact-sec .inner{
+    margin-bottom: 15px;
+}
+
+.contact-sec .inner .phone a{
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+    transition: all .3s ease;
+}
+
+.contact-sec .inner .email a{
+    font-size: 17px;
+    color: #fff;
+    margin-left: 20px;
+    transition: all .3s ease;
+}
+
+.contact-sec .inner .phone a:hover,
+.contact-sec .inner .email a:hover{
+    color: #d3983f;
+}
+
+.contact-box .form-control{
+    height: 70px;
+    margin-bottom: 30px;
+    border: none;
+    padding-left: 22px;
+}
+
+.contact-box textarea.form-control{
+    height: 185px;
+    padding-top: 18px;
+}
+
+.contact-box input[type="submit"]{
+    background: #014553;
+    color: #fffc;
+    outline: none;
+    border: none;
+    padding: 25px 75px;
+    font-size: 18px;
+    border: 1px solid #014553;
+    transition: all .3s ease;
+}
+
+.contact-box input[type="submit"]:hover{
+    background-color: #d3983f;
+    color: #fff;
+    border: 1px solid #d3983f;
+}
+
+.contact-box .form-group input:focus,
+.contact-box .form-group textarea:focus{
+    border: 1px solid #d3983f;
+    box-shadow: 0 0 0 0.2rem #d3983f36;
+}
+
+.contact-box input[type="submit"]:focus{
+    border: 1px solid #d3983f;
+    color: #d3983f;
+    background-color: transparent;
+}
+
+/* ******************************
+:: 12.0 Footer Area CSS
+****************************** */
+.footer-area{
+    padding: 50px 0 25px;
+}
+
+.copyright-area a img{
+    max-width: 100px;
+}
+
+.footer-inner .menu-lists li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.25rem;
+    transition: all .3s ease;
+}
+
+.footer-inner .menu-lists li a:last-child{
+    padding-right: 0;
+}
+
+.footer-inner .menu-lists li a:hover{
+    color: #d3983f;
+}
+
+.footer-inner .logo{
+    margin-bottom: 25px;
+}
+
+.footer-inner .social-icons li a svg{
+    color: #014553;
+    font-size: 22px;
+    margin-right: 10px;
+    transition: all .3s ease;
+}
+
+.footer-inner .social-icons li a:hover svg{
+    color: #d3983f;
+}
+
+.copyright-area p{
+    color: #d3983f;
+    font-size: 16px;
 }

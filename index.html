@@ -24,7 +24,7 @@
 
     <!--====== Scroll To Top Area Start ======-->
     <div id="scrollUp" title="Scroll To Top">
-        <i class="icofont-bubble-up"></i>
+        <i class="fa fa-angle-up"></i>
     </div>
     <!--====== Scroll To Top Area End ======-->
 
@@ -64,7 +64,6 @@
                 </div>
             </div>
         </header>
-        <!-- ***** Header End ***** -->
 
         <!-- ***** Welcome Area Start ***** -->
         <section id="home" class="section welcome-area bg-img d-flex align-items-center">
@@ -87,8 +86,8 @@
         </section>
 
         <!-- ***** Collection Area Start ***** -->
-        <section class="collection-area section ptb_100">
-            <div class="container">
+        <section class="collection-area section ptb_100" id="collection">
+            <div class="container container-collection">
                 <div class="row">
                     <div class="col-12 text-center">
                         <div class="head-section">
@@ -101,79 +100,500 @@
                     <div class="col-lg-3">
                         <ul class="tab service-thumb d-flex flex-column" >
                             <li>
-                                <a href="" class="tablinks" onmouseover="openCity(event, 'earrings')"><span>Earrings</span></a>
+                                <a href="#" class="tablinks" onmouseover="openCity(event, 'earrings')">
+                                    <div class="name"><span>Earrings</span></div>
+                                    <div class="icon"><i class="fas fa-caret-right"></i></div>
+                                </a>
                             </li>
                             <li>
-                                <a href="" class="tablinks" onmouseover="openCity(event, 'rings')"><span>Rings</span></a>
+                                <a href="#" class="tablinks" onmouseover="openCity(event, 'rings')">
+                                    <div class="name"><span>Rings</span></div>
+                                    <div class="icon"><i class="fas fa-caret-right"></i></div>
+                                </a>
                             </li>
                             <li>
-                                <a href="" class="tablinks" onmouseover="openCity(event, 'pendants')"><span>Pendants</span></a>
+                                <a href="#" class="tablinks" onmouseover="openCity(event, 'pendants')">
+                                    <div class="name"><span>Pendants</span></div>
+                                    <div class="icon"><i class="fas fa-caret-right"></i></div>
+                                </a>
                             </li>
                             <li>
-                                <a href="" class="tablinks" onmouseover="openCity(event, 'necklace')"><span>Necklaces</span></a>
+                                <a href="#" class="tablinks" onmouseover="openCity(event, 'necklace')">
+                                    <div class="name"><span>Necklaces</span></div>
+                                    <div class="icon"><i class="fas fa-caret-right"></i></div>
+                                </a>
                             </li>
                             <li>
-                                <a href="" class="tablinks" onmouseover="openCity(event, 'bangles')"><span>Bangles</span></a>
+                                <a href="#" class="tablinks" onmouseover="openCity(event, 'bangles')">
+                                    <div class="name"><span>Bangles</span></div>
+                                    <div class="icon"><i class="fas fa-caret-right"></i></div>
+                                </a>
                             </li>
         
                         </ul>
                     </div>
                     <div class="col-lg-9">
-                        <div class="product-view">
+                        <!-- <div class="product-view"> -->
 
                             <div id="earrings" class="tabcontent" style="display: block;">
-                                <div class="row">
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring3.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring4.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring5.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring6.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring7.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 p-10">
-                                        <div class="inner-pro">
-                                            <img src="assets/img/products/earring8.jpg" alt="">
-                                        </div>
-                                    </div>
+                                <div class="product-head">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#gold" class="nav-link active" id="gold-tab" data-toggle="tab" role="tab" aria-controls="gold" aria-selected="true">Gold</a>
+                                            </li>
+                                            <li>
+                                                <a href="#diamonds" class="nav-link" id="diamonds-tab" data-toggle="tab" role="tab" aria-controls="diamonds" aria-selected="false">Diamonds</a>
+                                            </li> 
+                                    </ul>
                                 </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+                                        <div class="row">
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring7.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring8.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-pane fade" id="diamonds" role="tabpanel" aria-labelledby="diamonds-tab">
+                                        <div class="row">
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div><!-- one -->
 
                             <div id="rings" class="tabcontent">
-                                <h1>getElementsByClassName</h1>
-                            </div>
+                                <div class="product-head">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#gold" class="nav-link active" id="gold-tab" data-toggle="tab" role="tab" aria-controls="gold" aria-selected="true">Gold</a>
+                                            </li>
+                                            <li>
+                                                <a href="#diamonds" class="nav-link" id="diamonds-tab" data-toggle="tab" role="tab" aria-controls="diamonds" aria-selected="false">Diamonds</a>
+                                            </li> 
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+                                        <div class="row">
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/ring1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring7.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring8.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-pane fade" id="diamonds" role="tabpanel" aria-labelledby="diamonds-tab">
+                                        <div class="row">
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div><!-- Two -->
 
                             <div id="pendants" class="tabcontent">
-                                <h3>Cascas bc</h3>
-                            </div>
+                                <div class="product-head">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#gold" class="nav-link active" id="gold-tab" data-toggle="tab" role="tab" aria-controls="gold" aria-selected="true">Gold</a>
+                                            </li>
+                                            <li>
+                                                <a href="#diamonds" class="nav-link" id="diamonds-tab" data-toggle="tab" role="tab" aria-controls="diamonds" aria-selected="false">Diamonds</a>
+                                            </li> 
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+                                        <div class="row">
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/pendant01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring7.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring8.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-pane fade" id="diamonds" role="tabpanel" aria-labelledby="diamonds-tab">
+                                        <div class="row">
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div><!-- three -->
 
+                            <div id="necklace" class="tabcontent">
+                                <div class="product-head">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#gold" class="nav-link active" id="gold-tab" data-toggle="tab" role="tab" aria-controls="gold" aria-selected="true">Gold</a>
+                                            </li>
+                                            <li>
+                                                <a href="#diamonds" class="nav-link" id="diamonds-tab" data-toggle="tab" role="tab" aria-controls="diamonds" aria-selected="false">Diamonds</a>
+                                            </li> 
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+                                        <div class="row">
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/necklace01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring7.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring8.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-pane fade" id="diamonds" role="tabpanel" aria-labelledby="diamonds-tab">
+                                        <div class="row">
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div><!-- Four -->
+
+                            <div id="bangles" class="tabcontent">
+                                <div class="product-head">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#gold" class="nav-link active" id="gold-tab" data-toggle="tab" role="tab" aria-controls="gold" aria-selected="true">Gold</a>
+                                            </li>
+                                            <li>
+                                                <a href="#diamonds" class="nav-link" id="diamonds-tab" data-toggle="tab" role="tab" aria-controls="diamonds" aria-selected="false">Diamonds</a>
+                                            </li> 
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+                                        <div class="row">
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/bangle01.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring4.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring6.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring7.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 p-10">
+                                                <div class="inner-pro">
+                                                    <img src="assets/img/products/earring8.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-pane fade" id="diamonds" role="tabpanel" aria-labelledby="diamonds-tab">
+                                        <div class="row">
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 p-10">
+                                                    <div class="inner-pro">
+                                                        <img src="assets/img/products/earring-dia5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div><!-- five -->
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** About Area Start ***** -->
+        <section class="about-area section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-content">
+                            <h4>About</h4>
+                            <h1>Erroz Gold & Diamonds</h1>
+                            <img src="assets/img/bg/head.png" alt="">
+                            <div class="text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,22 +601,38 @@
         </section>
        
         <!--====== Contact Area Start ======-->
-        <section id="contact" class="contact-area bg-gray ptb_100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-6">
-                        <!-- Section Heading -->
-                        <div class="section-heading text-center">
-                            <h2 class="text-capitalize">Stay Tuned</h2>
-                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+        <section id="contact" class="collection-area section ptb_100">
+            <div class="container container-collection">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="head-section">
+                            <h1>Contacts</h1>
+                            <img src="assets/img/bg/head.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-4">
+                        <div class="address-sec">
+                            <h2>Address</h2>
+                            <p>Lorem Ipsum is simply dummy 
+                                text of the printing and 
+                                typesetting industry</p>
+                            <div class="contact-sec">
+                                <div class="inner d-flex align-items-center">
+                                    <div class="icon"><img src="assets/img/phone.png" alt=""></div>
+                                    <div class="phone"><a href="tel:+91 0123456789">+91 0123456789</a></div>
+                                </div>
+                                <div class="inner d-flex align-items-center">
+                                    <div class="icon"><img src="assets/img/mail.png" alt=""></div>
+                                    <div class="email"><a href="mailto:mail@domainname.com">mail@domainname.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
                         <!-- Contact Box -->
-                        <div class="contact-box text-center">
+                        <div class="contact-box">
                             <!-- Contact Form -->
                             <form id="contact-form" method="POST" action="assets/php/mail.php">
                                 <div class="row">
@@ -204,29 +640,72 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="name" placeholder="Name" required="required">
                                         </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
                                         <div class="form-group">
                                             <input type="email" class="form-control" name="email" placeholder="Email" required="required">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="required">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="form-group">
-                                            <textarea class="form-control" name="message" placeholder="Message" required="required"></textarea>
+                                            <input type="text" class="form-control" name="phone" placeholder="Contact No" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-bordered mt-3 mt-sm-4" type="submit">Send Message</button>
+                                        <input type="submit" value="Submit">
                                     </div>
                                 </div>
                             </form>
-                            <p class="form-message"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--====== Footer Area Start ======-->
+        <footer class="footer-area section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="footer-inner">
+                            <div class="logo">
+                                <img src="assets/img/logo/erroz-footer-logo.png" alt="">
+                            </div>
+                            <ul class="menu-lists d-flex justify-content-center mb-3">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#collection">Collection</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                            <ul class="social-icons d-flex justify-content-center mb-3">
+                                <li>
+                                    <a href="" class="text-white-50"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-white-50"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-white-50"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="copyright-area">
+                                <p>Copyright &copy; 2021 All Rights Reserved. Designed by <a href="http://www.theviralmafia.com/?utm_source=erroz"><img src="assets/img/logo/viralmafia.png" alt=""></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
     </div>
@@ -256,8 +735,6 @@
             evt.currentTarget.className += " active";
         }
     </script>
-
-
 
 </body>
 

@@ -42,6 +42,13 @@
             $('.navbar-toggler-icon').toggleClass('active');
         });
 
+        //menu click
+        $('.nav-link').click(function(){
+            $('.navbar').toggleClass('active');
+            $('body').toggleClass('canvas-open');
+            $('.navbar-toggler-icon').toggleClass('active');
+        })
+
         // NAVBAR STICKY
         var $stickyNav = $(".navbar-sticky");
 
